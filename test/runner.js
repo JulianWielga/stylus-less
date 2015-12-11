@@ -28,6 +28,7 @@ describe('integration', function(){
       var css = fs.readFileSync('test/cases/' + test + '.css', 'utf8').replace(/\r/g, '').trim();
 
       var style = stylus(styl)
+        //.import('test/cases/test.less')
         .use(nib())
         .set('filename', path)
         .define('url', stylus.url());
