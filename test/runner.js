@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 var stylus = require('stylus'),
-    nib = require('../'),
+    Plugin = require('../'),
     fs = require('fs');
 
 /**
@@ -28,8 +28,7 @@ describe('integration', function(){
       var css = fs.readFileSync('test/cases/' + test + '.css', 'utf8').replace(/\r/g, '').trim();
 
       var style = stylus(styl)
-        //.import('test/cases/test.less')
-        .use(nib())
+        .use(Plugin)
         .set('filename', path)
         .define('url', stylus.url());
 
