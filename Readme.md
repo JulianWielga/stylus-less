@@ -1,7 +1,7 @@
 ## Installation
 
 ```bash
-$ npm install stylus-less
+$ npm install stylus-less-plugin
 ```
 
 ## JavaScript API
@@ -11,7 +11,7 @@ $ npm install stylus-less
 ```javascript
 var connect = require('connect')
   , stylus = require('stylus')
-  , plugin = require('stylus-less');
+  , plugin = require('stylus-less-plugin');
 
 var server = connect();
 
