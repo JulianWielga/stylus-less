@@ -44,9 +44,10 @@ importLess = (path) ->
       block.push @visit block
 
 
-Plugin = (style) ->
-  style.include __dirname
-  style.define 'importLess', importLess
+Plugin = ->
+  (style) ->
+    style.include __dirname
+    style.define 'importLess', importLess
 
 extend Plugin,
   path: __dirname

@@ -19,7 +19,7 @@ function compile(str, path) {
   return stylus(str)
 	.set('filename', path)
 	.set('compress', true)
-	.use(plugin);
+	.use(plugin());
 }
 
 server.use(stylus.middleware({
