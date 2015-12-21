@@ -1,11 +1,11 @@
 {
-  "name": "stylus-test-plugin",
-  "description": "Stylus mixins and utilities",
+  "name": "stylus-less-plugin",
+  "description": "Stylus plugin to import less variables",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/visionmedia/nib.git"
+    "url": "git://github.com/JulianWielga/stylus-less.git"
   },
   "dependencies": {
     "less": "1.4.2",
@@ -18,7 +18,11 @@
     "mocha": "*",
     "should": "*"
   },
-  "author": "TJ Holowaychuk <tj@vision-media.ca>",
+  "authors": [
+    "Julian Wielga",
+    "Andrey Popp",
+    "TJ Holowaychuk <tj@vision-media.ca>"
+  ],
   "main": "lib/importLess.js",
   "engines": {
     "node": "*"
